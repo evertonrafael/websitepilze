@@ -4,9 +4,13 @@ $font-family-base: 'Raleway', sans-serif;
 @import "bootstrap";
 @import "font-awesome";
 
-$base: #ccc;
+//Base Pilze
+@import "cores";
+
+$base: $amarelo-pilze;
 
 body{
     background: $base;
-    color:#fff;
+    color:#333;
+    font-family: $font-family-base;
 }
