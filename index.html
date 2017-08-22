@@ -1,17 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <title>Pilze - Cogumelos Naturais</title>
-        <link rel="stylesheet" href="lib/css/min/all.min.css">
-        <script src="lib/js/min/scripts.min.js"></script>
-    </head>
-    <body>
-        <div class="container-fluid">
-            123
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Pilze - Cogumelos Naturais</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="lib/css/min/all.min.css">
+    <script src="lib/js/min/scripts.min.js"></script>
+    <script type="text/javascript" src="receitas/receitas.json"></script>
+
+    <script>
+        function loadJSON(callback) {   
+            
+                var xobj = new XMLHttpRequest();
+                    xobj.overrideMimeType("application/json");
+                xobj.open('GET', 'receitas/receitas.json', true); // Replace 'my_data' with the path to your file
+                xobj.onreadystatechange = function () {
+                      if (xobj.readyState == 4 && xobj.status == "200") {
+                        // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+                        callback(xobj.responseText);
+                      }
+                };
+                xobj.send(null);  
+             }
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        123
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
         </div>
-        <div class="container">
-            abc
+        <div class="row">
+            <div class="col-md-8">.col-md-8</div>
+            <div class="col-md-4">.col-md-4</div>
         </div>
-    </body>
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">.col-md-6</div>
+            <div class="col-md-6">.col-md-6</div>
+        </div>
+    </div>
+</body>
+
 </html>
