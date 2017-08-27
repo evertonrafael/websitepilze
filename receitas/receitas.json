@@ -1,1 +1,7 @@
-data = '[{"blue" : "is ok", "red" : "is my fave color"}]';
+   
+    {
+        "title": "Singular sensation",
+        "text": "Beady little eyes",
+        "image": "Little birds pitch by my doorstep",
+        "video": "Little birds pitch by my doorstep"
+    }

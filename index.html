@@ -7,49 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Pilze - Cogumelos Naturais</title>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+
+    <script src="lib/js/min/scripts.min.js"></script>
+
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
 
     <link rel="stylesheet" href="lib/css/min/all.min.css">
-    <script src="lib/js/min/scripts.min.js"></script>
-    <script type="text/javascript" src="receitas/receitas.json"></script>
 
-    <script>
-        function loadJSON(callback) {   
-            
-                var xobj = new XMLHttpRequest();
-                    xobj.overrideMimeType("application/json");
-                xobj.open('GET', 'receitas/receitas.json', true); // Replace 'my_data' with the path to your file
-                xobj.onreadystatechange = function () {
-                      if (xobj.readyState == 4 && xobj.status == "200") {
-                        // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-                        callback(xobj.responseText);
-                      }
-                };
-                xobj.send(null);  
-             }
+
+    <script type="text/javascript">
+        $.getJSON("receitas/receitas.json", function (data) {
+            var items = [];
+            $.each(data, function (title, text, image) {
+                items.push("<li id='" + title + "'>" + text + "</li>");
+            });
+
+            $("<ul/>", {
+                "class": "my-new-list",
+                html: items.join("")
+            }).appendTo("#receitas");
+        });
     </script>
 </head>
 
 <body>
-    <div class="container-fluid">
-        123
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1">.col-md-1</div>
-            <div class="col-md-1">.col-md-1</div>
-            <div class="col-md-1">.col-md-1</div>
-            <div class="col-md-1">.col-md-1</div>
-            <div class="col-md-1">.col-md-1</div>
-            <div class="col-md-1">.col-md-1</div>
-            <div class="col-md-1">.col-md-1</div>
-            <div class="col-md-1">.col-md-1</div>
-            <div class="col-md-1">.col-md-1</div>
-            <div class="col-md-1">.col-md-1</div>
-            <div class="col-md-1">.col-md-1</div>
-            <div class="col-md-1">.col-md-1</div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 no-p">
+                <div class="full-banner">
+                    <div><img src="images/banner/pilze-cogumelos-naturais-banner1.jpg"></div>
+                    <div><img src="images/banner/pilze-cogumelos-naturais-banner2.jpg"></div>
+                    <div><img src="images/banner/pilze-cogumelos-naturais-banner3.jpg"></div>
+                    <div><img src="images/banner/pilze-cogumelos-naturais-banner4.jpg"></div>
+                    <div><img src="images/banner/pilze-cogumelos-naturais-banner5.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
         <div class="row">
             <div class="col-md-8">.col-md-8</div>
             <div class="col-md-4">.col-md-4</div>
@@ -60,8 +83,31 @@
             <div class="col-md-4">.col-md-4</div>
         </div>
         <div class="row">
-            <div class="col-md-6">.col-md-6</div>
-            <div class="col-md-6">.col-md-6</div>
+            <div class="col-xs-12">
+                <div class="receitas" data-slick='{"slidesToShow": 5, "slidesToScroll": 5}'>
+                    <div>
+                        <h3>1</h3>
+                    </div>
+                    <div>
+                        <h3>2</h3>
+                    </div>
+                    <div>
+                        <h3>3</h3>
+                    </div>
+                    <div>
+                        <h3>4</h3>
+                    </div>
+                    <div>
+                        <h3>5</h3>
+                    </div>
+                    <div>
+                        <h3>6</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="receitas"></div>
         </div>
     </div>
 </body>

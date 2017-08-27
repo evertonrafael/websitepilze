@@ -7,7 +7,7 @@ $font-family-base: 'Roboto', sans-serif;
 //Base Pilze
 @import "cores";
 
-$base: $amarelo-pilze;
+$base: $cinza-pilze;
 
 body{
     background: $base;
@@ -16,3 +16,15 @@ body{
     font-size:14px;
     font-weight: 400;
 }
+
+.no-p{padding: 0;}
+.no-p-t{padding-top: 0;}
+.no-p-r{padding-right: 0;}
+.no-p-b{padding-bottom: 0;}
+.no-p-l{padding-left: 0;}
+
+.no-m{margin: 0;}
+.no-m-t{margin-top: 0;}
+.no-m-r{margin-right: 0;}
+.no-m-b{margin-bottom: 0;}
+.no-m-l{margin-left: 0;}
