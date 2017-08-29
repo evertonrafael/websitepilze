@@ -1,30 +1,117 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 $font-family-base: 'Roboto', sans-serif;
-
 @import "bootstrap";
 @import "font-awesome";
-
 //Base Pilze
 @import "cores";
-
-$base: $cinza-pilze;
-
-body{
-    background: $base;
-    color:#333;
+body {
+    background: $preto-pilze;
+    color: #333;
     font-family: $font-family-base;
-    font-size:14px;
+    font-size: 14px;
     font-weight: 400;
 }
 
-.no-p{padding: 0;}
-.no-p-t{padding-top: 0;}
-.no-p-r{padding-right: 0;}
-.no-p-b{padding-bottom: 0;}
-.no-p-l{padding-left: 0;}
+.no-p {
+    padding: 0;
+}
 
-.no-m{margin: 0;}
-.no-m-t{margin-top: 0;}
-.no-m-r{margin-right: 0;}
-.no-m-b{margin-bottom: 0;}
-.no-m-l{margin-left: 0;}
+.no-p-t {
+    padding-top: 0;
+}
+
+.no-p-r {
+    padding-right: 0;
+}
+
+.no-p-b {
+    padding-bottom: 0;
+}
+
+.no-p-l {
+    padding-left: 0;
+}
+
+.no-m {
+    margin: 0;
+}
+
+.no-m-t {
+    margin-top: 0;
+}
+
+.no-m-r {
+    margin-right: 0;
+}
+
+.no-m-b {
+    margin-bottom: 0;
+}
+
+.no-m-l {
+    margin-left: 0;
+}
+
+.full-banner {
+    margin: 60px 0 0 0;
+    .slick-slide {
+        width: 100%;
+        height: 90vh;
+        position: relative;
+        h2 {
+            position: absolute;
+            bottom: 50px;
+            left: 70px;
+            font-weight: 700;
+            color: #fff;
+            font-size: 6em;
+            z-index: 2;
+        }
+        & img {
+            width: 100%;
+            text-align: center;
+            transform: translate(0, -20%);
+            z-index: 1;
+        }
+    }
+}
+
+.navbar-nav {
+    border: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: $preto-pilze;
+    >li {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+        padding: 5px 30px;
+        background-color: $preto-pilze;
+        &:hover,
+        &:active,
+        &:focus {
+            background: $preto-pilze;
+        }
+        &.logotipo {
+            border-radius: 120px;
+            padding: 8px;
+            margin: -16px 0 0 0;
+            a {
+                &:hover {
+                    background: transparent;
+                }
+                img {
+                    width: 100px;
+                }
+            }
+        }
+        a {
+            &:hover {
+                background: $preto-pilze;
+                color: $amarelo-pilze;
+            }
+            color:rgba(255, 255, 255, 0.8);
+        }
+    }
+}
