@@ -4,9 +4,10 @@ $font-family-base: 'Roboto', sans-serif;
 @import "font-awesome";
 //Base Pilze
 @import "cores";
+
 body {
     background: $preto-pilze;
-    color: #333;
+    color: rgba(255,255,255,0.8);
     font-family: $font-family-base;
     font-size: 14px;
     font-weight: 400;
@@ -52,66 +53,89 @@ body {
     margin-left: 0;
 }
 
-.full-banner {
-    margin: 60px 0 0 0;
-    .slick-slide {
-        width: 100%;
-        height: 90vh;
-        position: relative;
-        h2 {
-            position: absolute;
-            bottom: 50px;
-            left: 70px;
-            font-weight: 700;
-            color: #fff;
-            font-size: 6em;
-            z-index: 2;
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
         }
-        & img {
-            width: 100%;
-            text-align: center;
-            transform: translate(0, -20%);
-            z-index: 1;
+        @media only screen and (#{$type}-width: $width) {
+            @content;
         }
     }
 }
-
-.navbar-nav {
-    border: 0;
-    width: 100%;
-    height: 60px;
-    text-align: center;
-    background-color: $preto-pilze;
-    >li {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-        padding: 5px 30px;
-        background-color: $preto-pilze;
-        &:hover,
-        &:active,
-        &:focus {
-            background: $preto-pilze;
-        }
-        &.logotipo {
-            border-radius: 120px;
-            padding: 8px;
-            margin: -16px 0 0 0;
-            a {
-                &:hover {
-                    background: transparent;
-                }
-                img {
-                    width: 100px;
-                }
-            }
-        }
-        a {
-            &:hover {
-                background: $preto-pilze;
-                color: $amarelo-pilze;
-            }
-            color:rgba(255, 255, 255, 0.8);
-        }
+//exemplo:
+.class-exemplo {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
     }
+}
+
+//keyframes
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }  
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+//exemplo:
+@include keyframes(slide-down) {
+    0% { opacity: 1; }
+    90% { opacity: 0; }
+}
+  
+  .class-exemplo {
+    width: 100px;
+    height: 100px;
+    background: black;
+    @include animation('slide-down 5s 3');
+}
+
+
+//Transitions
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+//exemplo:
+.class-exemplo {
+  color: gray;
+  @include transition(color .3s ease);
+  &:hover {
+    color: black;
+  }
 }

@@ -1,0 +1,161 @@
+@import "cores";
+@import "base";
+
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
+
+.full-banner {
+    margin: 60px 0 0 0;
+    .slick-slide {
+        width: 100%;
+        height: 90vh;
+        position: relative;
+        h2 {
+            position: absolute;
+            bottom: 50px;
+            left: 70px;
+            font-weight: 700;
+            color: #fff;
+            font-size: 6em;
+            z-index: 2;
+        }
+        & img {
+            width: 100%;
+            text-align: center;
+            transform: translate(0, -20%);
+            z-index: 1;
+        }
+    }
+}
+
+.slick-dots{
+    bottom: 20px;
+    li {
+        button{
+            &:before{
+                opacity: .75;
+                color: white;
+                font-size: 20px;
+            }
+        }
+        &.slick-active {
+            button{
+                &:before{
+                    opacity: 1;
+                    color: $amarelo-pilze;
+                }
+            }
+        }
+    }
+}
+
+.navbar-nav {
+    border: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: $preto-pilze;
+    >li {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+        padding: 5px 30px;
+        background-color: $preto-pilze;
+        &:hover,
+        &:active,
+        &:focus {
+            background: $preto-pilze;
+        }
+        &.logotipo {
+            $animacao-logo: all .3s ease;
+            @include transition($animacao-logo);
+            border-radius: 120px;
+            padding: 2px;
+            margin: -10px 0 0 0;
+            a {
+                @include transition($animacao-logo);
+                &:hover {
+                    background: transparent;
+                    &:after{
+                        border-bottom:0px;
+                    }
+                }
+                &:focus{
+                    border-radius: 120px;
+                    background: transparent;
+                }
+                img {
+                    @include transition($animacao-logo);
+                    width: 100px;
+                }
+            }
+            &.small{
+                @include transition($animacao-logo);
+                padding: 2px;
+                margin: -4px 0 0 0;
+                a {
+                    @include transition($animacao-logo);
+                    padding: 8px;
+                    img {
+                        @include transition($animacao-logo);
+                        width: 60px;
+                    }
+                }
+            }
+        }
+        a {
+            &:hover {
+                background: $preto-pilze;
+                color: $amarelo-pilze;
+                &:after{
+                    position: absolute;
+                    left: 0;
+                    bottom: -7px;
+                    content: '';
+                    width: 100%;
+                    height:1px;
+                    border-bottom:4px solid $amarelo-pilze;
+                }
+            }
+            color:rgba(255, 255, 255, 0.8);
+        }
+    }
+}
+
+.info-block{
+    padding: 70px 0;
+    margin-bottom: 100px;
+}
+
+.info-receitas{
+    // margin-bottom: 20px;
+}
+
+.info-newsletter{
+    background: $amarelo-pilze;
+    padding: 40px 0;
+    h2, h4{
+        margin:0;
+        color: $preto-pilze;
+    }
+    h2{
+        margin: 5px 0;
+    }
+    .form-group {
+        margin-bottom: 5px;
+    }
+    .newsletter-form{}
+    .newsletter-btn{
+        height: 72px;
+        .btn{
+            height: 100%;
+        }
+    }
+}
+
+footer{
+    padding: 20px 0;
+    background: $azul-pilze;
+}
