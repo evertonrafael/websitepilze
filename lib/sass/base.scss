@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 $font-family-base: 'Roboto', sans-serif;
 @import "bootstrap";
-@import "font-awesome";
 //Base Pilze
 @import "cores";
 
@@ -11,6 +10,7 @@ body {
     font-family: $font-family-base;
     font-size: 14px;
     font-weight: 400;
+    position: relative;
 }
 
 .no-p {

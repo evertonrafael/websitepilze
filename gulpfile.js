@@ -22,16 +22,9 @@ var sassOptions = {
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass', 'scripts'], function() {
-
     browserSync.init({
         server: "./"
     });
-
-    gulp.watch("lib/sass/*.scss", ['sass']);
-    gulp.watch("lib/js/**/*.js", ['scripts']);
-    gulp.watch("*.html").on('change', browserSync.reload);
-    gulp.watch("lib/css/*.css").on('change', browserSync.reload);
-    gulp.watch("lib/js/*.js").on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
@@ -42,7 +35,7 @@ gulp.task('sass', function() {
         .pipe(rename({suffix: '.min'}))
         .pipe(cssmin())
         .pipe(gulp.dest("lib/css/min"))
-        .pipe(browserSync.stream());
+        .pipe(browserSync.reload({stream: true}));
 });
 
 //script paths
@@ -56,7 +49,13 @@ return gulp.src(jsFiles)
     .pipe(rename('scripts.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest(jsDest))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('default', ['serve', 'bower']);
+gulp.task('watch', ['serve'], function () {
+    gulp.watch("lib/sass/*.scss", ['sass']);
+    gulp.watch("lib/js/**/*.js", ['scripts']);
+    gulp.watch("*.html").on('change', browserSync.reload);
+});
+
+gulp.task('default', ['watch', 'serve', 'bower']);
