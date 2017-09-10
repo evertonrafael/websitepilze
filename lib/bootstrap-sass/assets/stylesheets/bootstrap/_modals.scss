@@ -77,6 +77,9 @@
 // Modal header
 // Top section of the modal w/ title and dismiss
 .modal-header {
+  background: #1D1E22;
+  color: #ffffff;
+  border-radius: 4px 4px 0 0;
   padding: $modal-title-padding;
   border-bottom: 1px solid $modal-header-border-color;
   @include clearfix;
@@ -84,6 +87,8 @@
 // Close icon
 .modal-header .close {
   margin-top: -2px;
+  color: #ffffff;
+  @include opacity(1)
 }
 
 // Title text within header
@@ -101,6 +106,9 @@
 
 // Footer (for actions)
 .modal-footer {
+  background: #1D1E22;
+  color: #ffffff;
+  border-radius:0 0 4px 4px;
   padding: $modal-inner-padding;
   text-align: right; // right align buttons
   border-top: 1px solid $modal-footer-border-color;

@@ -1,15 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
-$font-family-base: 'Roboto', sans-serif;
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+$font-family-base: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+$font-family-base: 'Open Sans', sans-serif;
 @import "bootstrap";
 //Base Pilze
 @import "cores";
 
 body {
     background: $preto-pilze;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.9);
     font-family: $font-family-base;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     position: relative;
 }
 
@@ -139,3 +141,27 @@ $breakpoints: (
     color: black;
   }
 }
+
+//Border Radius
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+  }
+//exemplo:
+.box-radius { @include border-radius(10px); }
+
+//Box Shadow
+@mixin box-shadow($top, $left, $blur, $size, $color, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow:inset $top $left $blur $size $color;
+        -moz-box-shadow:inset $top $left $blur $size $color;
+        box-shadow:inset $top $left $blur $size $color;
+    } @else {
+        -webkit-box-shadow: $top $left $blur $size $color;
+        -moz-box-shadow: $top $left $blur $size $color;
+        box-shadow: $top $left $blur $size $color;
+    }
+}
+/* @include box-shadow(1px,1px,1px,0, #fff, true); */

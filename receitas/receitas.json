@@ -1,55 +1,115 @@
 [{
-        "title": "Singular sensation",
-        "text": "Beady little eyes",
-        "image": "Little birds pitch by my doorstep",
-        "video": "Little birds pitch by my doorstep",
-        "ingredientes":"123, 123, 123",
-        "preparo":"123, 123, 123",
-        "text2":"Fim de texto"
+        "id": "molhoshitaki",
+        "title": "MOLHO DE SHITAKE",
+        "subtitle": "Uma opção ideal para massas e acompanhamento de carnes. Conheça essa incrível receita",
+        "text1": "Uma opção ideal para massas e acompanhamento de carnes. Conheça essa incrível receita",
+        "image": "molho-de-shitake.jpg",
+        "video": "",
+        "ingredientes": "25g de Shitake desidratado, 2 xícaras de creme de leite fresco, 3 colheres de cafezinho de sal. (1 para a a cebola e 2 para cozinhar a massa), 1 colher rasa de sobremesa de manteiga, 1 cebola média/pequena (100g), 100g de fetuccine ou a massa que preferir, Parmesão ralado para acompanhar a massa",
+        "preparo": [
+            { "passo1": "</br><b>1 - </b>Coloque o Shitake na água quente e deixe hidratando por 10 minutos, depois retire-os e coloque dentro do creme de leite fresco. Reserve" },
+            { "passo2": "</br><b>2 - </b>Enquanto isso, corte a cebola em rodelas finíssimas e depois pique-as, coloque na panela com a manteiga , o sal em fogo baixo/médio e deixe até que comece a ficar um amarelo mais forte. De 15 a 20 minutos" },
+            { "passo3": "</br><b>3 - </b>Depois que a cebola estiver no ponto, coloque o creme de leite com os cogumelos , misture e deixe cozinhar por 15 minutos em fogo baixo/médio, coloque então meia concha da água que hidratou os cogumelos e deixe cozinhar por mais 10 a 15 minutos." },
+            { "passo4": "</br><b>4 - </b>Enquanto isso coloque água em outra panela para cozinhar a massa, quando ferver coloque as 2 colheres de cafezinho de sal veja o tempo de cozimento na embalagem e assim que estiver cozida escorra e misture ao molho, sirva com o parmesão ralado a parte." },
+            { "passo5": "" },
+            { "passo6": "" },
+            { "passo7": "" }
+        ],
+        "text2": ""
     },
     {
-        "title": "Singular sensation 2",
-        "text": "Beady little eyes 2",
-        "image": "Little birds pitch by my doorstep 2",
-        "video": "Little birds pitch by my doorstep 2",
-        "ingredientes":"123, 123, 123",
-        "preparo":"123, 123, 123",
-        "text2":"Fim de texto 2"
+        "id": "sopaabobora",
+        "title": "Sopa de abóbora com shitake",
+        "subtitle": "Receita de sopa cremosa de abóbora e shitake temperada com gengibre e shoyu e com um toque de óleo de gergelim tostado.",
+        "text1": "Receita de sopa cremosa de abóbora e shitake temperada com gengibre e shoyu e com um toque de óleo de gergelim tostado.",
+        "image": "sopa-de-abobora-com-shiitaki.jpg",
+        "video": "",
+        "ingredientes": "25g de Shitake desidratado, 2 xícaras de creme de leite fresco, 3 colheres de cafezinho de sal. (1 para a a cebola e 2 para cozinhar a massa), 1 colher rasa de sobremesa de manteiga, 1 cebola média/pequena (100g), 100g de fetuccine ou a massa que preferir, Parmesão ralado para acompanhar a massa",
+        "preparo": [
+            { "passo1": "</br><b>1 - </b>Coloque o Shitake na água quente e deixe hidratando por 10 minutos, depois retire-os e coloque dentro do creme de leite fresco. Reserve" },
+            { "passo2": "</br><b>2 - </b>Enquanto isso, corte a cebola em rodelas finíssimas e depois pique-as, coloque na panela com a manteiga , o sal em fogo baixo/médio e deixe até que comece a ficar um amarelo mais forte. De 15 a 20 minutos" },
+            { "passo3": "</br><b>3 - </b>Depois que a cebola estiver no ponto, coloque o creme de leite com os cogumelos , misture e deixe cozinhar por 15 minutos em fogo baixo/médio, coloque então meia concha da água que hidratou os cogumelos e deixe cozinhar por mais 10 a 15 minutos." },
+            { "passo4": "</br><b>4 - </b>Enquanto isso coloque água em outra panela para cozinhar a massa, quando ferver coloque as 2 colheres de cafezinho de sal veja o tempo de cozimento na embalagem e assim que estiver cozida escorra e misture ao molho, sirva com o parmesão ralado a parte." },
+            { "passo5": "" },
+            { "passo6": "" },
+            { "passo7": "" }
+        ],
+        "text2": ""
     },
     {
-        "title": "Singular sensation 3",
-        "text": "Beady little eyes 3",
-        "image": "Little birds pitch by my doorstep 3",
-        "video": "Little birds pitch by my doorstep 3",
-        "ingredientes":"123, 123, 123",
-        "preparo":"123, 123, 123",
-        "text2":"Fim de texto 3"
+        "id": "talharimespinafre",
+        "title": "TALHARIM COM ESPINAFRE E SHITAKE",
+        "subtitle": "Talharim é tudo de bom, ainda mais com shitake e espinafre. Confira este molho branco de aveia com cogumelos deliciosos para este prato.",
+        "text1": "Talharim é tudo de bom, ainda mais com shitake e espinafre. Confira este molho branco de aveia com cogumelos deliciosos para este prato.",
+        "image": "talharim-com-espinafre-shiitaki.jpg",
+        "video": "",
+        "ingredientes": "25g de Shitake desidratado, 2 xícaras de creme de leite fresco, 3 colheres de cafezinho de sal. (1 para a a cebola e 2 para cozinhar a massa), 1 colher rasa de sobremesa de manteiga, 1 cebola média/pequena (100g), 100g de fetuccine ou a massa que preferir, Parmesão ralado para acompanhar a massa",
+        "preparo": [
+            { "passo1": "</br><b>1 - </b>Coloque o Shitake na água quente e deixe hidratando por 10 minutos, depois retire-os e coloque dentro do creme de leite fresco. Reserve" },
+            { "passo2": "</br><b>2 - </b>Enquanto isso, corte a cebola em rodelas finíssimas e depois pique-as, coloque na panela com a manteiga , o sal em fogo baixo/médio e deixe até que comece a ficar um amarelo mais forte. De 15 a 20 minutos" },
+            { "passo3": "</br><b>3 - </b>Depois que a cebola estiver no ponto, coloque o creme de leite com os cogumelos , misture e deixe cozinhar por 15 minutos em fogo baixo/médio, coloque então meia concha da água que hidratou os cogumelos e deixe cozinhar por mais 10 a 15 minutos." },
+            { "passo4": "</br><b>4 - </b>Enquanto isso coloque água em outra panela para cozinhar a massa, quando ferver coloque as 2 colheres de cafezinho de sal veja o tempo de cozimento na embalagem e assim que estiver cozida escorra e misture ao molho, sirva com o parmesão ralado a parte." },
+            { "passo5": "" },
+            { "passo6": "" },
+            { "passo7": "" }
+        ],
+        "text2": ""
     },
     {
-        "title": "Singular sensation 4",
-        "text": "Beady little eyes 4",
-        "image": "Little birds pitch by my doorstep 4",
-        "video": "Little birds pitch by my doorstep 4",
-        "ingredientes":"123, 123, 123",
-        "preparo":"123, 123, 123",
-        "text2":"Fim de texto 4"
+        "id": "shitakeassadococo",
+        "title": "Shitake assado no coco verde",
+        "subtitle": "Você pode achar loucura, coisas que só aparecem em sonho, receitas que nunca vimos num livro, ingredientes que nunca experimentamos. Mas ficam deliciosos, experimente!",
+        "text1": "Você pode achar loucura, coisas que só aparecem em sonho, receitas que nunca vimos num livro, ingredientes que nunca experimentamos. Mas ficam deliciosos, experimente!",
+        "image": "shitake-assado-no-coco-verde.jpg",
+        "video": "vKL1yqxa5Bo",
+        "ingredientes": "25g de Shitake desidratado, 2 xícaras de creme de leite fresco, 3 colheres de cafezinho de sal. (1 para a a cebola e 2 para cozinhar a massa), 1 colher rasa de sobremesa de manteiga, 1 cebola média/pequena (100g), 100g de fetuccine ou a massa que preferir, Parmesão ralado para acompanhar a massa",
+        "preparo": [
+            { "passo1": "</br><b>1 - </b>Coloque o Shitake na água quente e deixe hidratando por 10 minutos, depois retire-os e coloque dentro do creme de leite fresco. Reserve" },
+            { "passo2": "</br><b>2 - </b>Enquanto isso, corte a cebola em rodelas finíssimas e depois pique-as, coloque na panela com a manteiga , o sal em fogo baixo/médio e deixe até que comece a ficar um amarelo mais forte. De 15 a 20 minutos" },
+            { "passo3": "</br><b>3 - </b>Depois que a cebola estiver no ponto, coloque o creme de leite com os cogumelos , misture e deixe cozinhar por 15 minutos em fogo baixo/médio, coloque então meia concha da água que hidratou os cogumelos e deixe cozinhar por mais 10 a 15 minutos." },
+            { "passo4": "</br><b>4 - </b>Enquanto isso coloque água em outra panela para cozinhar a massa, quando ferver coloque as 2 colheres de cafezinho de sal veja o tempo de cozimento na embalagem e assim que estiver cozida escorra e misture ao molho, sirva com o parmesão ralado a parte." },
+            { "passo5": "" },
+            { "passo6": "" },
+            { "passo7": "" }
+        ],
+        "text2": ""
     },
     {
-        "title": "Singular sensation 5",
-        "text": "Beady little eyes 5",
-        "image": "Little birds pitch by my doorstep 5",
-        "video": "Little birds pitch by my doorstep 5",
-        "ingredientes":"123, 123, 123",
-        "preparo":"123, 123, 123",
-        "text2":"Fim de texto 5"
+        "id": "mousseshitake",
+        "title": "Mousse salgado de Shitake",
+        "subtitle": "O ministério da saúde adverte: Criar coisas novas pode trazer felicidade espontânea. Cozinhar essa receita vai te deixar muito feliz!",
+        "text1": "O ministério da saúde adverte: Criar coisas novas pode trazer felicidade espontânea. Cozinhar essa receita vai te deixar muito feliz!",
+        "image": "Mousse-salgado-de-Shitake.jpg",
+        "video": "",
+        "ingredientes": "25g de Shitake desidratado, 2 xícaras de creme de leite fresco, 3 colheres de cafezinho de sal. (1 para a a cebola e 2 para cozinhar a massa), 1 colher rasa de sobremesa de manteiga, 1 cebola média/pequena (100g), 100g de fetuccine ou a massa que preferir, Parmesão ralado para acompanhar a massa",
+        "preparo": [
+            { "passo1": "</br><b>1 - </b>Coloque o Shitake na água quente e deixe hidratando por 10 minutos, depois retire-os e coloque dentro do creme de leite fresco. Reserve" },
+            { "passo2": "</br><b>2 - </b>Enquanto isso, corte a cebola em rodelas finíssimas e depois pique-as, coloque na panela com a manteiga , o sal em fogo baixo/médio e deixe até que comece a ficar um amarelo mais forte. De 15 a 20 minutos" },
+            { "passo3": "</br><b>3 - </b>Depois que a cebola estiver no ponto, coloque o creme de leite com os cogumelos , misture e deixe cozinhar por 15 minutos em fogo baixo/médio, coloque então meia concha da água que hidratou os cogumelos e deixe cozinhar por mais 10 a 15 minutos." },
+            { "passo4": "</br><b>4 - </b>Enquanto isso coloque água em outra panela para cozinhar a massa, quando ferver coloque as 2 colheres de cafezinho de sal veja o tempo de cozimento na embalagem e assim que estiver cozida escorra e misture ao molho, sirva com o parmesão ralado a parte." },
+            { "passo5": "" },
+            { "passo6": "" },
+            { "passo7": "" }
+        ],
+        "text2": ""
     },
     {
-        "title": "Singular sensation 6",
-        "text": "Beady little eyes 6",
-        "image": "Little birds pitch by my doorstep 6",
-        "video": "Little birds pitch by my doorstep 6",
-        "ingredientes":"123, 123, 123",
-        "preparo":"123, 123, 123",
-        "text2":"Fim de texto 6"
+        "id": "hamburguershitake",
+        "title": "Hambúrguer com Shitake e Cebolas caramelizadas",
+        "subtitle": "Já imaginou comer um Hambúrguer que vai mudar totalmente a ideia do que é Hambúrguer? Então experimente isso agora!",
+        "text1": "Já imaginou comer um Hambúrguer que vai mudar totalmente a ideia do que é Hambúrguer? Então experimente isso agora!",
+        "image": "Hamburguer-com-Shitake.jpg",
+        "video": "",
+        "ingredientes": "25g de Shitake desidratado, 2 xícaras de creme de leite fresco, 3 colheres de cafezinho de sal. (1 para a a cebola e 2 para cozinhar a massa), 1 colher rasa de sobremesa de manteiga, 1 cebola média/pequena (100g), 100g de fetuccine ou a massa que preferir, Parmesão ralado para acompanhar a massa",
+        "preparo": [
+            { "passo1": "</br><b>1 - </b>Coloque o Shitake na água quente e deixe hidratando por 10 minutos, depois retire-os e coloque dentro do creme de leite fresco. Reserve" },
+            { "passo2": "</br><b>2 - </b>Enquanto isso, corte a cebola em rodelas finíssimas e depois pique-as, coloque na panela com a manteiga , o sal em fogo baixo/médio e deixe até que comece a ficar um amarelo mais forte. De 15 a 20 minutos" },
+            { "passo3": "</br><b>3 - </b>Depois que a cebola estiver no ponto, coloque o creme de leite com os cogumelos , misture e deixe cozinhar por 15 minutos em fogo baixo/médio, coloque então meia concha da água que hidratou os cogumelos e deixe cozinhar por mais 10 a 15 minutos." },
+            { "passo4": "</br><b>4 - </b>Enquanto isso coloque água em outra panela para cozinhar a massa, quando ferver coloque as 2 colheres de cafezinho de sal veja o tempo de cozimento na embalagem e assim que estiver cozida escorra e misture ao molho, sirva com o parmesão ralado a parte." },
+            { "passo5": "" },
+            { "passo6": "" },
+            { "passo7": "" }
+        ],
+        "text2": ""
     }
 ]

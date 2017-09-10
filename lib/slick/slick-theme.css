@@ -27,8 +27,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    /*width: 20px;
+    height: 20px;*/
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -66,9 +66,10 @@
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'slick';
-    font-size: 20px;
+    font-family: 'FontAwesome';
+    font-size: 80px;
     line-height: 1;
+    margin-top: -50px; 
 
     opacity: .75;
     color: white;
@@ -88,7 +89,7 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '\f104';
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -106,7 +107,7 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: '\f105';
 }
 [dir='rtl'] .slick-next:before
 {
@@ -114,10 +115,10 @@
 }
 
 /* Dots */
-.slick-dotted.slick-slider
+/*.slick-dotted.slick-slider
 {
     margin-bottom: 30px;
-}
+}*/
 
 .slick-dots
 {
