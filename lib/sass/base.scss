@@ -57,6 +57,10 @@ body {
     margin-left: 0;
 }
 
+.hide{
+    display: none !important;
+}
+
 $breakpoints: (
     "phone":        400px,
     "phone-wide":   480px,

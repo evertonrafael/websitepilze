@@ -46,7 +46,7 @@
                 font-family: $font-alex-brush;
                 color: #fff;
                 font-size: 8em;
-                text-shadow: 0px 4px 0px rgba(0,0,0,0.3);
+                text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.3);
                 z-index: 2;
                 @include mq('tablet-wide', max) {
                     font-size: 2.5em;
@@ -61,7 +61,8 @@
             }
         }
         @include mq('tablet-wide', max) {
-            .slick-next, .slick-prev{
+            .slick-next,
+            .slick-prev {
                 display: none !important;
             }
         }
@@ -87,8 +88,6 @@
             }
         }
     }
-
-    
 
     .navbar {
         .navbar-header {
@@ -300,7 +299,8 @@
             img {
                 width: 100%;
             }
-            .slick-next, .slick-prev{
+            .slick-next,
+            .slick-prev {
                 @include mq('tablet-wide', max) {
                     display: none !important;
                 }
@@ -378,11 +378,11 @@
                     bottom: -50px;
                 }
             }
-            .slick-prev{
-                left:-10px;
+            .slick-prev {
+                left: -10px;
             }
-            .slick-next{
-                right:-10px;
+            .slick-next {
+                right: -10px;
             }
         }
         .panel-body {
@@ -404,7 +404,8 @@
         .form-group {
             margin-bottom: 5px;
         } //.newsletter-form {}
-        .newsletter-btn {
+        .newsletter-btn,
+        .newsletter-btn .clear {
             height: 72px;
             @include mq('tablet-wide', max) {
                 width: 100%;
@@ -443,6 +444,25 @@
                     font-size: 40px;
                 }
                 margin: 0 10px 0 10px;
+            }
+            .contato-form{
+                .form-group{
+                    margin-bottom: 5px;
+                    .form-control{
+                        height: auto;
+                        padding: 10px 12px;
+                        background-color: $azul-pilze;
+                        border: 0px;
+                        color: #fff;
+                        &:focus{
+                            background-color: $amarelo-pilze;
+                            color: $preto-pilze;
+                        }
+                    }
+                    .btn-enviar{
+                        padding: 10px 30px;
+                    }
+                }
             }
         }
         .assinatura {
